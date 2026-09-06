@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e242c" />
+      <stop offset="100%" stop-color="#12161b" />
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f87fd" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#19c0ea" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Main Core Gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f87fd" />
+      <stop offset="50%" stop-color="#19c0ea" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="4" y="4" width="112" height="112" rx="28" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="2.5" />
+
+  <!-- Background Ambient Glow -->
+  <circle cx="60" cy="60" r="32" fill="#3f87fd" opacity="0.15" filter="url(#glow)" />
+
+  <!-- Modern Geometric 'B' Shape & AI Agent Neural Structure -->
+  <path d="M36 28 C36 24.686 38.686 22 42 22 L56 22 C67.046 22 76 30.954 76 42 C76 49.346 72.036 55.772 66.155 59.214 C73.184 62.482 78 69.674 78 78 C78 89.046 69.046 98 58 98 L42 98 C38.686 98 36 95.314 36 92 Z" 
+        fill="url(#brandGrad)" />
+
+  <!-- Inner Negative Space Upper Loop -->
+  <rect x="47" y="34" width="15" height="18" rx="7" fill="#14181e" />
+
+  <!-- Inner Negative Space Lower Loop -->
+  <rect x="47" y="66" width="17" height="20" rx="8" fill="#14181e" />
+
+  <!-- Glowing Neural Nodes / AI Spark Connection -->
+  <circle cx="84" cy="38" r="4.5" fill="#19c0ea" filter="url(#glow)" />
+  <line x1="72" y1="42" x2="84" y2="38" stroke="#19c0ea" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+  
+  <circle cx="88" cy="74" r="5" fill="#8b5cf6" filter="url(#glow)" />
+  <line x1="76" y1="78" x2="88" y2="74" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+
+  <!-- Core Pulse Center -->
+  <circle cx="54" cy="59" r="3.5" fill="#FFFFFF" opacity="0.9" />
+</svg>
